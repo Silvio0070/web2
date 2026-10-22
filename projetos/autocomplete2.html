@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+</head>
+<body>
+    <form action="parametros3.php" method="post">
+        <h1>Cadastro de currículo</h1>
+        <fieldset>
+            <legend>Informações pessoais</legend>
+            <label for="nome_id">Digite seu nome:</label>
+            <input placeholder="Digite seu nome" type="text" name="nome" id="nome_id" required><br>
+            <label for="email_id">Digite seu email: </label>
+            <input placeholder="Digite seu email" type="email" name="email" id="email_id" required><br>
+            <label for="nasc_id">Data de nascimento: </label>
+            <input type="date" name="nasc" id="nasc_id" required><br>
+            <label for="alt_id">Altura: </label>
+            <input type="number" name="alt" id="alt_id" required><br>
+            <label for="site_id">Site</label>
+            <input placeholder="Facebook, Linkedin, Lattes... " type="text" name="site" id="site_id" required><br>
+            <label for="ec_id">Estado Civil: </label>
+            <select name="ec">
+                <option value="Solteiro">Solteiro</option>
+                <option value="Casado">Casado</option>
+                <option value="Divorciado">Divorciado</option>
+                <option value="Viuvo">Viúvo</option>
+            </select><br>
+            <label for="sexo">Sexo:</label>
+            <input type="radio" name="F" id="sexo"> Feminino
+            <input type="radio" name="M" id="sexo"> Masculino
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="cep_id">CEP:</label>
+            <input type="text" name="cep" id="cep_id" required><br>
+            <label for="end_id">Endereço:</label>
+            <input type="text" name="end" id="end_id" required><br>
+        </fieldset>
+         <fieldset>
+            <legend>Contato</legend>
+            <label for="telef_id">Telefone:</label>
+            <input placeholder="(86) 99999-9999" 
+       pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" type="tel" name="telef" id="telef_id" required><br>
+            <label for="celula_id">Selola:</label>
+            <input placeholder="(86) 99999-9999" 
+       pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" type="tel" name="celular" id="celula_id" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Conhecimentos</legend>
+            <input type="radio" name="HTML" id="html_id">
+            <label for="html_id">HTML</label>
+            <input type="radio" name="CSS" id="css_id">
+            <label for="css_id">CSS</label>
+            <input type="radio" name="JavaScript" id="java_id">
+            <label for="java_id">JavaScript</label>
+            <br>
+            <label for="text_id">Mais conhecimentos</label>
+            <textarea id="text_id" name="conhecimentos" cows="30" rows="5">Digite os seus comer cimentos</textarea>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>

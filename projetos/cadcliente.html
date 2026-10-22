@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX1</title>
+</head>
+<body>
+    <form action="cadcliente.php" name="formCadastro" method="post">
+        <h1>Cadastro de clientes</h1>
+        <table style="width: 100%;" >
+            <tr>
+                <th style="width: 18%;" > Nome</th>
+                <td  style="width: 82%;"> <input type="text" name="txtNome"></td>
+            </tr>
+            <tr>
+                <th>CPF</th>
+                <td> <input type="text" name="txtCPF" maxlength="14"></td>
+            </tr>
+            <tr>
+                <th>Endereço</th>
+                <td><textarea name="txtEndereco" cols="30" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <th>Estado</th>
+                <td>
+                    <select name="listEstados">
+                        <option value="BA">Bahia</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="MG">Minas gerais</option>
+                        <option value="RJ">RIo de Janeiro</option>
+                        <option value="SP">São PAulo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Data Nasc.</th>
+                <td><input type="text" name="txtData"></td>
+            </tr>
+            <tr>
+                <th>SExo</th>
+                <td>
+                    <input type="radio" name="sexo" id="M" checked>masculino <br> 
+                    <input type="radio" name="sexo" id="F"> feminino
+                </td>
+            </tr>
+            <tr>
+                <th>Areas de interesse</th>
+                <td>
+                    <input type="checkbox" name="checkCinema" id="True"> cinema <br>
+                    <input type="checkbox" name="checkMusica" id="True"> musica <br>
+                    <input type="checkbox" name="checkInfo" id="True"> informatica
+                </td>
+            </tr>
+            <tr>
+            <th>senha</th>
+            <td><input type="password" name="txtSenha1" id=""></td>
+            </tr>
+            <th>confirmação de senha</th>
+            <td><input type="password" name="txtSenha2" id=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Enviar"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Limpar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
