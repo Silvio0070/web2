@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dados do Currículo</title>
+</head>
+<body style="background-color: red; color: yellow;" >
+
+    
+<?php
+$nome  = $_POST['nome'] ?? '';
+$email = $_POST['email'] ?? '';
+$nasc  = $_POST['nasc'] ?? '';
+$alt   = $_POST['alt'] ?? '';
+$site  = $_POST['site'] ?? '';
+$ec    = $_POST['ec'] ?? '';
+$sexo  = $_POST['sexo'] ?? '';
+$cep   = $_POST['cep'] ?? '';
+$end   = $_POST['end'] ?? '';
+$telef = $_POST['telef'] ?? '';
+$cel   = $_POST['celular'] ?? '';
+$mais  = $_POST['mais'] ?? '';
+$conhecimentos = $_POST['conhecimentos'] ?? [];
+
+    $lista = implode(", ", $conhecimentos);
+
+    echo " <h1>Dados do Currículo</h1>";
+    echo $nome . "<br>";
+    echo $email . "<br>";
+    echo $nasc . "<br>";
+    echo $alt . "<br>";
+    echo $site . "<br>";
+    echo $ec . "<br>";
+    echo $sexo . "<br>";
+    echo $cep . "<br>";
+    echo $end . "<br>";
+    echo $telef . "<br>";
+    echo $cel . "<br>";
+    echo $lista . "<br>";
+    echo $mais . "<br>";
+    
+
+
+?>
+<br>
+</body>
+</html>

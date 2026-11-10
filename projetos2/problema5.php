@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado - Problema 5</title>
+</head>
+<body>
+<?php
+function ordenar($array) {
+    sort($array);
+    return $array;
+}
+
+$texto = $_POST["numeros"];
+$numeros = explode(",", $texto);
+
+$novo = ordenar($numeros);
+
+echo "Ordem crescente: " . implode(", ", $novo);
+?>
+<br><br>
+</body>
+</html>
